@@ -2,3 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+// Vendor
+// @import "bootstrap-sprockets";
+@import "bootstrap";
+
+.about {
+  font-size: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 20px;
+  background-color: #f0f8f4; /* Light green shade */
+  border-radius: 10px;
+}
