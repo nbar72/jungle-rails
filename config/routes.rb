@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   get '/register' => 'users#new'
   post '/users' => 'users#create'
 
+  #sessions
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 
